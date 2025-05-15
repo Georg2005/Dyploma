@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  document.querySelector(".add-ad").addEventListener("click", function () {
+    location.href = "#add-ads";
+  });
+
   const form = document.getElementById("adForm");
   if (form) {
     form.addEventListener("submit", function (e) {

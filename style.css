@@ -149,7 +149,7 @@ body {
   display: flex;
   align-items: center;
   padding: 16px;
-  border: 1px solid #ddd;
+  border: 3px solid #00aaff69;
   border-radius: 10px;
   background-color: #fff;
   text-decoration: none;
@@ -196,6 +196,7 @@ textarea {
   padding: 8px;
   margin-top: 5px;
   box-sizing: border-box;
+  border: 2px solid #077bb469;
 }
 
 select {
@@ -203,27 +204,34 @@ select {
   font-family: "Courier New", Courier, monospace;
   padding: 8px 5px;
   margin-top: 5px;
+  border: 2px solid #077bb469;
   box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .ad {
   width: 250px;
   height: 50px;
-  background-color: #333;
+  background-color: #077bb469;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 1rem;
-  color: white;
   padding: 10px 20px;
   margin: 20px 0px;
   border: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .ad:hover {
-  color: #b0b0b0;
+  background: #074463db;
+  color: white;
 }
 
 .reset {
@@ -324,10 +332,15 @@ hr {
 
 .footer {
   background-color: #f7f7f7;
-  padding: 40px;
+  padding: 40px 20px 20px;
+}
+
+.footer-columns {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -347,11 +360,11 @@ hr {
 
 .icons a i {
   color: black;
+  transition: color 0.3s;
 }
 
-.icons img {
-  width: 24px;
-  height: 24px;
+.icons a:hover i {
+  color: #555;
 }
 
 .footer-column {
@@ -371,10 +384,24 @@ hr {
 }
 
 .footer-column ul li a {
+  display: block;
   margin-bottom: 6px;
   font-size: 14px;
   color: #333;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #555;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
 }
 
 @keyframes scroll {
