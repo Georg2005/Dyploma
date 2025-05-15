@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostHub</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-yH8Wxk7KOkzLRXeSh3uE3wXKnQ50xOyGC7+M8uD7GHGPkV+ZQO0oVfYDjUfnTfFYuGsnlsGv+d+dZPN2qGDb0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/PostHub logo.jpg" alt="logo" />
+      <div class="nav-links">
+        <a href="#catalogue" class="active">Каталог</a>
+        <a href="#" class="active">Додати оголошення</a>
+        <a href="#" class="active">Контакти</a>
+      </div>
+    </nav>
+    <main>
+      <div class="infinite-carousel">
+        <div class="carousel-overlay">
+          <div class="overlay-content">
+            <h3>Додайте свое оголошення!</h3>
+            <button class="add-ad">Додати оголошення</button>
+          </div>
+        </div>
+        <div class="carousel-track" id="infiniteCarousel">
+          <div class="carousel-slide">
+            <img
+              src="images/biznesmen-rabotausii-na-noutbuke.jpg"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="images/pexels-darina-belonogova-8373934.jpg"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img src="images/pexels-gabby-k-5331198.jpg" alt="Slide 3" />
+          </div>
+          <div class="carousel-slide">
+            <img src="images/pexels-oudneypatsika-2769437.jpg" alt="Slide 4" />
+          </div>
+          <div class="carousel-slide">
+            <img src="images/pexels-yankrukov-8837717.jpg" alt="Slide 5" />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="images/rabota-iz-doma-na-ergonomicnoi-rabocei-stancii.jpg"
+              alt="Slide 6"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="catalogue" id="catalogue">
+        <h2>Каталог оголошень</h2>
+        <div class="grid">
+          <a href="#" class="card">
+            <img src="images/free-icon-agreement-4757251.png" alt="" />
+            <div class="title">Нерухомість</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-transportation-11205858.png" alt="" />
+            <div class="title">Транспорт</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-circuit-2432572.png" alt="" />
+            <div class="title">Електроніка</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-agronomy-1188086.png" alt="" />
+            <div class="title">Агрокультура</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-safe-for-children-15359414.png" alt="" />
+            <div class="title">Товари для дітей</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-grocery-4914399.png" alt="" />
+            <div class="title">Продукти харчування</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-vacancy-5474200.png" alt="" />
+            <div class="title">Вакансії</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-daycare-center-4496845.png" alt="" />
+            <div class="title">Дім та сад</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-missing-person-15564980.png" alt="" />
+            <div class="title">Зник</div>
+          </a>
+          <a href="#" class="card">
+            <img src="images/free-icon-logistic-5187153.png" alt="" />
+            <div class="title">Перевезення</div>
+          </a>
+        </div>
+      </div>
+      <section class="form-container">
+        <h2>Створити оголошення</h2>
+        <form id="adForm">
+          <label for="title">Вкажіть назву*</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Напишіть назву..."
+            required
+          />
+
+          <label for="description">Опис*</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            placeholder="Опишіть оголошення..."
+            required
+          ></textarea>
+
+          <label for="category">Категорія*</label>
+          <select id="category" name="category" required>
+            <option value="">Оберіть категорію</option>
+            <option value="техніка">Техніка</option>
+            <option value="транспорт">Транспорт</option>
+            <option value="нерухомість">Нерухомість</option>
+            <option value="одяг">Одяг</option>
+          </select>
+
+          <label for="contact">Контактна особа*</label>
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            placeholder=""
+            required
+          />
+
+          <label for="contactPhone">Номер телефону*</label>
+          <input
+            type="number"
+            id="contactPhone"
+            name="contactPhone"
+            placeholder=""
+            required
+          />
+
+          <label>Фото*</label>
+          <p>Перше фото буде на обкладинці оголошення.</p>
+
+          <div class="photo-upload-container">
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+
+            <label class="photo-slot">
+              <input
+                type="file"
+                name="images[]"
+                accept="image/png, image/jpeg"
+                title="Додати фото"
+              />
+              <img
+                class="default-icon"
+                src="https://img.icons8.com/ios/50/camera--v1.png"
+                alt="Іконка камери"
+              />
+              <img class="uploaded-image" hidden alt="Завантажене зображення" />
+            </label>
+          </div>
+
+          <button type="button" id="resetForm" class="reset">
+            Очистити форму
+          </button>
+          <button type="submit" class="ad">Опублікувати</button>
+        </form>
+      </section>
+      <hr />
+    </main>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="images/PostHub logo.jpg" alt="Logo" />
+        <div class="icons">
+          <a href="#linkedin" title="LinkedIn"
+            ><i class="fab fa-linkedin fa-lg black-icon"></i
+          ></a>
+          <a href="#x" title="X (Twitter)"
+            ><i class="fab fa-x-twitter fa-lg black-icon"></i
+          ></a>
+          <a href="#instagram" title="Instagram"
+            ><i class="fab fa-instagram fa-lg black-icon"></i
+          ></a>
+          <a href="#youtube" title="YouTube"
+            ><i class="fab fa-youtube fa-lg black-icon"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Name of the paragraph</h4>
+        <ul>
+          <li><a href="">ghjghj</a></li>
+          <li><a href="">ghjghj</a></li>
+          <li><a href="">ghjghj</a></li>
+          <li><a href="">ghjghj</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Name of the paragraph</h4>
+        <ul>
+          <li><a href="#ui-design">UI design</a></li>
+          <li><a href="#ux-design">UX design</a></li>
+          <li><a href="#wireframing">Wireframing</a></li>
+          <li><a href="#diagramming">Diagramming</a></li>
+          <li><a href="#brainstorming">Brainstorming</a></li>
+          <li><a href="#online-whiteboard">Online whiteboard</a></li>
+          <li><a href="#team-collaboration">Team collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Name of the paragraph</h4>
+        <ul>
+          <li><a href="#ui-design">UI design</a></li>
+          <li><a href="#ux-design">UX design</a></li>
+          <li><a href="#wireframing">Wireframing</a></li>
+          <li><a href="#diagramming">Diagramming</a></li>
+          <li><a href="#brainstorming">Brainstorming</a></li>
+          <li><a href="#online-whiteboard">Online whiteboard</a></li>
+          <li><a href="#team-collaboration">Team collaboration</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
