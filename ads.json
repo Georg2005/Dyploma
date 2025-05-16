@@ -6,7 +6,7 @@
     "category": "транспорт",
     "contact": "Ігор",
     "contactPhone": "+380734563468",
-    "imageURL": "images/bike1.jpg"
+    "images": ["images/bike1.jpg"]
   },
 
   {
@@ -16,7 +16,7 @@
     "category": "транспорт",
     "contact": "Олександр",
     "contactPhone": "+380964785236",
-    "imageURL": "images/moped1.jpg"
+    "images": ["images/moped1.jpg"]
   },
 
   {
@@ -26,7 +26,7 @@
     "category": "транспорт",
     "contact": "Марія",
     "contactPhone": "+380504561237",
-    "imageURL": "images/skoda1.jpg"
+    "images": ["images/skoda1.jpg"]
   },
 
   {
@@ -36,7 +36,7 @@
     "category": "транспорт",
     "contact": "Наталія",
     "contactPhone": "+380674589632",
-    "imageURL": "images/kids_bike1.jpg"
+    "images": ["images/kids_bike1.jpg"]
   },
 
   {
@@ -46,7 +46,7 @@
     "category": "нерухомість",
     "contact": "Олена",
     "contactPhone": "+380674532109",
-    "imageURL": "images/apartment1.jpg"
+    "images": ["images/apartment1.jpg"]
   },
 
   {
@@ -56,7 +56,7 @@
     "category": "нерухомість",
     "contact": "Віталій",
     "contactPhone": "+380504561234",
-    "imageURL": "images/house1.jpg"
+    "images": ["images/house1.jpg"]
   },
 
   {
@@ -66,7 +66,7 @@
     "category": "нерухомість",
     "contact": "Сергій",
     "contactPhone": "+380934567812",
-    "imageURL": "images/land1.jpg"
+    "images": ["images/land1.jpg"]
   },
 
   {
@@ -76,47 +76,47 @@
     "category": "нерухомість",
     "contact": "Анна",
     "contactPhone": "+380634587921",
-    "imageURL": "images/studio1.jpg"
+    "images": ["images/studio1.jpg"]
   },
 
   {
     "id": "9",
     "title": "Продам iPhone 14 Pro 256GB",
     "description": "Смартфон у ідеальному стані, з гарантією до 2024 року. Повна комплектація, чохол у подарунок. Торг за наявності.",
-    "category": "техніка",
+    "category": "електроніка",
     "contact": "Максим",
     "contactPhone": "+380674532189",
-    "imageURL": "images/iphone14.jpg"
+    "images": ["images/iphone14.jpg"]
   },
 
   {
     "id": "10",
     "title": "Ноутбук ASUS ROG Strix G15",
     "description": "Gaming ноутбук 2022 року (RTX 3060, 16GB RAM, 1TB SSD). Використовувався акуратно, гарантія ще діє. Без подряпин.",
-    "category": "техніка",
+    "category": "електроніка",
     "contact": "Артем",
     "contactPhone": "+380504561244",
-    "imageURL": "images/asus_rog.jpg"
+    "images": ["images/asus_rog.jpg"]
   },
 
   {
     "id": "11",
     "title": "Фотоапарат Canon EOS R6",
     "description": "Дзеркальний фотоапарат + об'єктив 24-105mm. Пробіг затвора 12 000 кадрів. Додатково 2 акумулятори та сумка.",
-    "category": "техніка",
+    "category": "електроніка",
     "contact": "Ольга",
     "contactPhone": "+380934567832",
-    "imageURL": "images/canon_r6.jpg"
+    "images": ["images/canon_r6.jpg"]
   },
 
   {
     "id": "12",
     "title": "Пральна машина Samsung EcoBubble",
     "description": "Відмінний стан, вантажність 8 кг. Економічна модель з прямим приводом. Можливий самовивіз або доставка.",
-    "category": "техніка",
+    "category": "електроніка",
     "contact": "Назар",
     "contactPhone": "+380634587941",
-    "imageURL": "images/samsung_wash.jpg"
+    "images": ["images/samsung_wash.jpg"]
   },
 
   {
@@ -126,7 +126,7 @@
     "category": "агрокультура",
     "contact": "Іван",
     "contactPhone": "+380674532111",
-    "imageURL": "images/apples_golden.jpg"
+    "images": ["images/apples_golden.jpg"]
   },
 
   {
@@ -136,7 +136,7 @@
     "category": "агрокультура",
     "contact": "Марія",
     "contactPhone": "+380504561222",
-    "imageURL": "images/corn_seeds.jpg"
+    "images": ["images/corn_seeds.jpg"]
   },
 
   {
@@ -146,7 +146,7 @@
     "category": "агрокультура",
     "contact": "Петро",
     "contactPhone": "+380934567833",
-    "imageURL": "images/tractor_mtz.jpg"
+    "images": ["images/tractor_mtz.jpg"]
   },
 
   {
@@ -156,47 +156,47 @@
     "category": "агрокультура",
     "contact": "Василь",
     "contactPhone": "+380634587955",
-    "imageURL": "images/combine_claas.jpg"
+    "images": ["images/combine_claas.jpg"]
   },
 
   {
     "id": "17",
     "title": "Продам дитяче ліжечко з матрацем",
     "description": "Якісне дерев'яне ліжечко для дітей 1-4 роки. Матрац ортопедичний, стан ідеальний. Без подряпин.",
-    "category": "для дітей",
+    "category": "для_дітей",
     "contact": "Анна",
     "contactPhone": "+380674532100",
-    "imageURL": "images/baby_bed.jpg"
+    "images": ["images/baby_bed.jpg"]
   },
 
   {
     "id": "18",
     "title": "Дитячий велосипед з додатковими колесами",
     "description": "Велосипед для дітей 4-6 років. Колеса 14 дюймів, регульоване сидіння. Колір рожевий.",
-    "category": "для дітей",
+    "category": "для_дітей",
     "contact": "Оксана",
     "contactPhone": "+380504561200",
-    "imageURL": "images/kids_bike.jpg"
+    "images": ["images/kids_bike.jpg"]
   },
 
   {
     "id": "19",
     "title": "Набір LEGO City",
     "description": "Повний набір LEGO City 'Поліцейський відділок' (60246). Всі деталі на місці, інструкція є.",
-    "category": "для дітей",
+    "category": "для_дітей",
     "contact": "Ігор",
     "contactPhone": "+380934567800",
-    "imageURL": "images/lego_set.jpg"
+    "images": ["images/lego_set.jpg"]
   },
 
   {
     "id": "20",
     "title": "Дитячий зимовий комбінезон",
     "description": "Теплий зимовий комбінезон для дітей 2-3 роки (розмір 92). Виробник - Kerry, стан відмінний.",
-    "category": "для дітей",
+    "category": "для_дітей",
     "contact": "Наталія",
     "contactPhone": "+380634587900",
-    "imageURL": "images/winter_suit.jpg"
+    "images": ["images/winter_suit.jpg"]
   },
 
   {
@@ -206,7 +206,7 @@
     "category": "продукти",
     "contact": "Микола",
     "contactPhone": "+380974561234",
-    "imageURL": "images/honey.jpg"
+    "images": ["images/honey.jpg"]
   },
   {
     "id": "22",
@@ -215,7 +215,7 @@
     "category": "продукти",
     "contact": "Ганна",
     "contactPhone": "+380634587812",
-    "imageURL": "images/cheese.jpg"
+    "images": ["images/cheese.jpg"]
   },
   {
     "id": "23",
@@ -224,7 +224,7 @@
     "category": "продукти",
     "contact": "Олександр",
     "contactPhone": "+380504561245",
-    "imageURL": "images/eggs.jpg"
+    "images": ["images/eggs.jpg"]
   },
   {
     "id": "24",
@@ -233,7 +233,7 @@
     "category": "продукти",
     "contact": "Тетяна",
     "contactPhone": "+380674532134",
-    "imageURL": "images/vegetables.jpg"
+    "images": ["images/vegetables.jpg"]
   },
 
   {
@@ -243,7 +243,7 @@
     "category": "вакансії",
     "contact": "ТОВ 'БудСервіс'",
     "contactPhone": "+380444561234",
-    "imageURL": "images/builder_job.jpg"
+    "images": ["images/builder_job.jpg"]
   },
 
   {
@@ -253,7 +253,7 @@
     "category": "вакансії",
     "contact": "Логістична компанія 'ТрансЕкспрес'",
     "contactPhone": "+380674532145",
-    "imageURL": "images/driver_job.jpg"
+    "images": ["images/driver_job.jpg"]
   },
 
   {
@@ -263,7 +263,7 @@
     "category": "вакансії",
     "contact": "Кафе 'Смаколик'",
     "contactPhone": "+380934567890",
-    "imageURL": "images/cook_job.jpg"
+    "images": ["images/cook_job.jpg"]
   },
 
   {
@@ -273,47 +273,47 @@
     "category": "вакансії",
     "contact": "Салон 'Естет'",
     "contactPhone": "+380504561267",
-    "imageURL": "images/admin_job.jpg"
+    "images": ["images/admin_job.jpg"]
   },
 
   {
     "id": "29",
     "title": "Продаж садового інвентарю",
     "description": "Новий садовий інвентар: лопати, граблі, сапи. Гарантія якості. Оптові та роздрібні продажі.",
-    "category": "дім та сад",
+    "category": "дім_та_сад",
     "contact": "Магазин 'Садовий світ'",
     "contactPhone": "+380974561278",
-    "imageURL": "images/garden_tools.jpg"
+    "images": ["images/garden_tools.jpg"]
   },
 
   {
     "id": "30",
     "title": "Квіти для саду (саджанці)",
     "description": "Продаж саджанців троянд, півоній, лілій. Висока приживлюваність. Консультації з догляду.",
-    "category": "дім та сад",
+    "category": "дім_та_сад",
     "contact": "Олександра",
     "contactPhone": "+380634587823",
-    "imageURL": "images/flowers.jpg"
+    "images": ["images/flowers.jpg"]
   },
 
   {
     "id": "31",
     "title": "Садові меблі з дерева",
     "description": "Комплект садових меблів (стіл + 4 стільці). Матеріал - ялівець. Виготовлення на замовлення.",
-    "category": "дім та сад",
+    "category": "дім_та_сад",
     "contact": "Майстерня 'Дерев'яний стиль'",
     "contactPhone": "+380504561289",
-    "imageURL": "images/garden_furniture.jpg"
+    "images": ["images/garden_furniture.jpg"]
   },
 
   {
     "id": "32",
     "title": "Послуги садівника",
     "description": "Догляд за садом: обрізка дерев, оформлення клумб, системи поливу. Досвід 10+ років.",
-    "category": "дім та сад",
+    "category": "дім_та_сад",
     "contact": "Сергій",
     "contactPhone": "+380674532156",
-    "imageURL": "images/gardener.jpg"
+    "images": ["images/gardener.jpg"]
   },
 
   {
@@ -323,7 +323,7 @@
     "category": "зник",
     "contact": "Поліція України",
     "contactPhone": "102",
-    "imageURL": "images/missing1.jpg"
+    "images": ["images/missing1.jpg"]
   },
 
   {
@@ -333,7 +333,7 @@
     "category": "зник",
     "contact": "Гаряча лінія 116 000",
     "contactPhone": "116000",
-    "imageURL": "images/missing_child.jpg"
+    "images": ["images/missing_child.jpg"]
   },
 
   {
@@ -343,7 +343,7 @@
     "category": "зник",
     "contact": "Волонтерська організація 'Пошук тварин'",
     "contactPhone": "+380934567777",
-    "imageURL": "images/missing_dog.jpg"
+    "images": ["images/missing_dog.jpg"]
   },
 
   {
@@ -353,7 +353,7 @@
     "category": "зник",
     "contact": "Родина Сич",
     "contactPhone": "+380504569999",
-    "imageURL": "images/missing2.jpg"
+    "images": ["images/missing2.jpg"]
   },
 
   {
@@ -363,7 +363,7 @@
     "category": "перевезення",
     "contact": "ТОВ 'ТрансЛайн'",
     "contactPhone": "+380444561111",
-    "imageURL": "images/cargo_truck.jpg"
+    "images": ["images/cargo_truck.jpg"]
   },
 
   {
@@ -373,7 +373,7 @@
     "category": "перевезення",
     "contact": "Сергій",
     "contactPhone": "+380674532222",
-    "imageURL": "images/furniture_moving.jpg"
+    "images": ["images/furniture_moving.jpg"]
   },
 
   {
@@ -383,7 +383,7 @@
     "category": "перевезення",
     "contact": "Автоперевізник 'Комфорт'",
     "contactPhone": "+380934568888",
-    "imageURL": "images/minibus.jpg"
+    "images": ["images/minibus.jpg"]
   },
 
   {
@@ -393,6 +393,6 @@
     "category": "перевезення",
     "contact": "Олексій",
     "contactPhone": "+380504562222",
-    "imageURL": "images/mover.jpg"
+    "images": ["images/mover.jpg"]
   }
 ]

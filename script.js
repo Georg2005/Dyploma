@@ -1,3 +1,26 @@
+if (!("scrollBehavior" in document.documentElement.style)) {
+  import("smoothscroll-polyfill").then((module) => {
+    module.polyfill();
+  });
+}
+
+function smoothScrollTo(targetElement, offset = 0) {
+  if (!targetElement) return;
+
+  try {
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  } catch (error) {
+    console.error("Smooth scroll error:", error);
+    targetElement.scrollIntoView();
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.getElementById("infiniteCarousel");
   const slides = document.querySelectorAll(".carousel-slide");
@@ -13,17 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-        });
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        const headerOffset = document.querySelector("header") ? 80 : 0;
+        smoothScrollTo(targetElement, headerOffset);
       }
     });
   });
 
-  document.querySelector(".add-ad").addEventListener("click", function () {
-    location.href = "#add-ads";
+  document.querySelector(".add-ad").addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector("#add-ads");
+    if (target) {
+      smoothScrollTo(target, 80);
+    }
   });
 
   const form = document.getElementById("adForm");
