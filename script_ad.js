@@ -54,6 +54,7 @@ function renderAds(ads) {
          <div class="ad-title">${ad.title}</div>
          <div class="ad-description">${ad.description}</div>
          <div class="ad-contact">Контакт: ${ad.contact}</div>
+         <div class="ad-contactPhone">Контактний телефон: ${ad.contactPhone}</div>
        </div>
      `;
 
@@ -81,3 +82,13 @@ function renderAds(ads) {
     });
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", function () {
+    this.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+});

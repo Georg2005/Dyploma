@@ -26,7 +26,7 @@
     "category": "транспорт",
     "contact": "Марія",
     "contactPhone": "+380504561237",
-    "images": ["images/skoda1.jpg"]
+    "images": ["images/scoda1.jpg"]
   },
 
   {
@@ -46,7 +46,7 @@
     "category": "нерухомість",
     "contact": "Олена",
     "contactPhone": "+380674532109",
-    "images": ["images/apartment1.jpg"]
+    "images": ["images/apartment1.jpg", "images/apartment2.jpg"]
   },
 
   {
@@ -76,7 +76,7 @@
     "category": "нерухомість",
     "contact": "Анна",
     "contactPhone": "+380634587921",
-    "images": ["images/studio1.jpg"]
+    "images": ["images/studio1.jpg", "images/studio2.jpg"]
   },
 
   {
