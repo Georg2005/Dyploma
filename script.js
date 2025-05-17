@@ -85,6 +85,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
       alert("Оголошення збережено!");
       form.reset();
+
+      document.querySelectorAll(".photo-slot").forEach((slot) => {
+        const defaultIcon = slot.querySelector(".default-icon");
+        const uploadedImage = slot.querySelector(".uploaded-image");
+
+        uploadedImage.src = "";
+        uploadedImage.style.display = "none";
+
+        defaultIcon.src = "https://img.icons8.com/ios/50/camera--v1.png";
+        defaultIcon.style.display = "block";
+        defaultIcon.style.width = "30px";
+        defaultIcon.style.height = "30px";
+        defaultIcon.style.opacity = "0.5";
+      });
     });
   }
 

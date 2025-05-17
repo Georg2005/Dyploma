@@ -150,14 +150,16 @@
             id="contact"
             name="contact"
             placeholder=""
+            pattern="[А-Яа-яЁёІіЇїЄєҐґA-Za-z\s]+"
             required
           />
 
           <label for="contactPhone">Номер телефону*</label>
           <input
-            type="number"
+            type="tel"
             id="contactPhone"
             name="contactPhone"
+            pattern="\+?[0-9]+"
             placeholder=""
             required
           />
