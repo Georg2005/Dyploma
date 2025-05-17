@@ -130,67 +130,98 @@ body {
 
 .ads-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .ad-card {
-  background: #fff;
-  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.ad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .ad-slider {
   position: relative;
   height: 200px;
-  background: #ddd;
+  overflow: hidden;
 }
+
 .ad-slider img {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: none;
 }
+
 .ad-slider img.active {
   display: block;
 }
+
 .ad-slider-buttons {
   position: absolute;
+  bottom: 10px;
   width: 100%;
-  top: 50%;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
   padding: 0 10px;
   box-sizing: border-box;
 }
+
 .ad-slider-buttons button {
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
   border: none;
-  padding: 5px 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   cursor: pointer;
-  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .ad-card-content {
   padding: 15px;
 }
+
 .ad-title {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-.ad-description {
-  color: #666;
-  font-size: 0.95em;
-  margin-bottom: 10px;
-}
-.ad-contact {
-  font-size: 0.85em;
-  color: #333;
   font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.ads-category-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding-left: 10px;
+}
+
+.ad-description {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ad-contact,
+.ad-phone {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .footer {
@@ -306,5 +337,18 @@ body {
 
   .hamburger.active i::before {
     content: "\f00d";
+  }
+
+  .ads-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .ad-slider {
+    height: 250px;
+  }
+
+  .search-container {
+    padding: 0 15px;
   }
 }

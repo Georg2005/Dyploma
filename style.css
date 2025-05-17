@@ -16,6 +16,7 @@ html {
   background-color: #fff;
   padding: 10px 20px;
   border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
 }
 
 .navbar img {
@@ -169,6 +170,7 @@ html {
   padding: 20px 40px;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid #ccc;
+  box-sizing: border-box;
 }
 
 .catalogue h2 {

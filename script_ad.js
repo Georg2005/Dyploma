@@ -3,18 +3,40 @@ const categoryParam = urlParams.get("category");
 
 const jsonUrl = "ads.json";
 
-fetch(jsonUrl)
-  .then((response) => response.json())
-  .then((ads) => {
-    const filteredAds = ads.filter((ad) => ad.category === categoryParam);
+let allAds = [];
+let currentCategory = categoryParam || null;
 
-    renderAds(filteredAds);
-  })
-  .catch((error) => {
+async function loadAds() {
+  try {
+    const response = await fetch(jsonUrl);
+    const jsonAds = await response.json();
+
+    const localAds = JSON.parse(localStorage.getItem("ads")) || [];
+
+    allAds = [...jsonAds, ...localAds];
+
+    filterAds("");
+  } catch (error) {
     console.error("Помилка завантаження JSON", error);
     document.getElementById("ads-container").innerHTML =
       "<p>Не вдалося завантажити оголошення.</p>";
-  });
+  }
+}
+
+function filterAds(searchTerm) {
+  let filtered = allAds;
+
+  if (currentCategory) {
+    filtered = filtered.filter((ad) => ad.category === currentCategory);
+  }
+
+  if (searchTerm) {
+    const term = searchTerm.toLowerCase();
+    filtered = filtered.filter((ad) => ad.title.toLowerCase().includes(term));
+  }
+
+  renderAds(filtered);
+}
 
 function renderAds(ads) {
   const container = document.getElementById("ads-container");
@@ -25,10 +47,22 @@ function renderAds(ads) {
     return;
   }
 
+  const oldTitle = document.querySelector(".ads-category-title");
+  if (oldTitle) oldTitle.remove();
+
+  // Категорія виводиться один раз
+  if (currentCategory) {
+    const categoryTitle = document.createElement("h2");
+    categoryTitle.className = "ads-category-title";
+    categoryTitle.textContent = `Категорія: ${currentCategory}`;
+    container.parentNode.insertBefore(categoryTitle, container);
+  }
+
   ads.forEach((ad) => {
     const card = document.createElement("div");
     card.className = "ad-card";
 
+    // Слайдер зображень
     let sliderImages = ad.images
       .map(
         (img, index) => `
@@ -49,6 +83,7 @@ function renderAds(ads) {
        </div>
      `;
 
+    // Контент оголошення
     const content = `
        <div class="ad-card-content">
          <div class="ad-title">${ad.title}</div>
@@ -62,6 +97,7 @@ function renderAds(ads) {
     container.appendChild(card);
   });
 
+  // Логіка слайдера для кожного оголошення
   document.querySelectorAll(".ad-slider").forEach((slider) => {
     const images = slider.querySelectorAll("img");
     let current = 0;
@@ -91,4 +127,28 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.toggle("active");
     navLinks.classList.toggle("active");
   });
+});
+
+function filterAds(searchTerm = "") {
+  let filtered = allAds;
+
+  if (currentCategory) {
+    filtered = filtered.filter((ad) => ad.category === currentCategory);
+  }
+
+  if (searchTerm.trim() !== "") {
+    const term = searchTerm.toLowerCase();
+    filtered = filtered.filter((ad) => ad.title.toLowerCase().includes(term));
+  }
+
+  renderAds(filtered);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadAds();
+});
+
+const searchInput = document.getElementById("search-input");
+searchInput.addEventListener("input", () => {
+  filterAds(searchInput.value);
 });
