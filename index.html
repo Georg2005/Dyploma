@@ -115,8 +115,11 @@
             type="text"
             id="title"
             name="title"
+            title="Заповніть поле"
             placeholder="Напишіть назву..."
             required
+            oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле!')"
+            oninput="setCustomValidity('')"
           />
 
           <label for="description">Опис*</label>
@@ -124,13 +127,23 @@
             id="description"
             name="description"
             rows="3"
+            title="Заповніть поле"
             placeholder="Опишіть оголошення..."
             required
             maxlength="250"
+            oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле!')"
+            oninput="setCustomValidity('')"
           ></textarea>
 
           <label for="category">Категорія*</label>
-          <select id="category" name="category" required>
+          <select
+            id="category"
+            name="category"
+            title="Заповніть поле"
+            required
+            oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле!')"
+            oninput="setCustomValidity('')"
+          >
             <option value="">Оберіть категорію</option>
             <option value="електроніка">Електроніка</option>
             <option value="транспорт">Транспорт</option>
@@ -149,9 +162,12 @@
             type="text"
             id="contact"
             name="contact"
+            title="Заповніть поле"
             placeholder=""
             pattern="[А-Яа-яЁёІіЇїЄєҐґA-Za-z\s]+"
             required
+            oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле!')"
+            oninput="setCustomValidity('')"
           />
 
           <label for="contactPhone">Номер телефону*</label>
@@ -159,9 +175,12 @@
             type="tel"
             id="contactPhone"
             name="contactPhone"
+            title="Заповніть поле"
             pattern="\+?[0-9]+"
             placeholder=""
             required
+            oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле!')"
+            oninput="setCustomValidity('')"
           />
 
           <label>Фото*</label>
@@ -172,9 +191,12 @@
               <input
                 type="file"
                 name="images[]"
+                title="Заповніть поле"
                 accept="image/png, image/jpeg"
                 title="Додати фото"
                 required
+                oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле!')"
+                oninput="setCustomValidity('')"
               />
               <img
                 class="default-icon"

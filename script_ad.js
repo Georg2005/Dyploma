@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const categoryParam = urlParams.get("category");
+let categoryParam = urlParams.get("category");
 
 const jsonUrl = "ads.json";
 
@@ -54,7 +54,10 @@ function renderAds(ads) {
   if (currentCategory) {
     const categoryTitle = document.createElement("h2");
     categoryTitle.className = "ads-category-title";
-    categoryTitle.textContent = `Категорія: ${currentCategory}`;
+    categoryTitle.textContent = `Категорія: ${currentCategory.replace(
+      /_/g,
+      " "
+    )}`; //Заміна "_" на пробіл
     container.parentNode.insertBefore(categoryTitle, container);
   }
 
