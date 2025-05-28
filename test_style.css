@@ -22,7 +22,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
   padding: 10px 20px;
   border-bottom: 2px solid #ccc;
 }
@@ -96,9 +95,31 @@ main {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.text {
-  display: inline-block;
-  margin: 20px;
+.section {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.tool-item {
+  margin: 1rem 0;
+}
+
+.tool-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.tool-item p {
+  margin: 0.2rem 0 0.8rem;
+  color: #555;
 }
 
 .footer {

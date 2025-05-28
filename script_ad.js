@@ -50,7 +50,6 @@ function renderAds(ads) {
   const oldTitle = document.querySelector(".ads-category-title");
   if (oldTitle) oldTitle.remove();
 
-  // Категорія виводиться один раз
   if (currentCategory) {
     const categoryTitle = document.createElement("h2");
     categoryTitle.className = "ads-category-title";
@@ -65,7 +64,6 @@ function renderAds(ads) {
     const card = document.createElement("div");
     card.className = "ad-card";
 
-    // Слайдер зображень
     let sliderImages = ad.images
       .map(
         (img, index) => `
@@ -86,7 +84,6 @@ function renderAds(ads) {
        </div>
      `;
 
-    // Контент оголошення
     const content = `
        <div class="ad-card-content">
          <div class="ad-title">${ad.title}</div>
@@ -100,7 +97,6 @@ function renderAds(ads) {
     container.appendChild(card);
   });
 
-  // Логіка слайдера для кожного оголошення
   document.querySelectorAll(".ad-slider").forEach((slider) => {
     const images = slider.querySelectorAll("img");
     let current = 0;
